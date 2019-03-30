@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>球队展示页面</h2>
+    <ul>
+        {% for team in all_team %}
+        <li>{{ team.t_name }}--{{ team.t_info }}--
+            <a href="/update_t/{{ team.id }}/">修改</a>--<a href="/delete_t/{{ team.id }}/">删除</a>--
+            <a href="/add_p/{{ team.id }}/">新增球员</a>--<a href="/show_p/{{ team.id }}/">球员列表</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

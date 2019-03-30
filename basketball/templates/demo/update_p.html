@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>球员修改页面</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        姓名: <input type="text" name="p_name" value={{ player.p_name }}><br>
+        性别: <input type="text" name="p_gender" value={{ player.p_gender }}><br>
+        简介: <input type="text" name="p_info" value={{ player.p_info }}><br>
+        <button type="submit">修改</button>
+    </form>
+</body>
+</html>
