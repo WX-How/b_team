@@ -2,7 +2,7 @@
 简单的Django项目
 demo中的文件：
   admin.py  页面展示的基本设置
-  apps.py  项目配置
+  apps.py  用户自定义配置文件
   models.py  数据库表的初始关系及表内字段设置
   views.py  视图函数（增删改查，包括球队、球员）
   urls.py  具体转视图的路由地址
